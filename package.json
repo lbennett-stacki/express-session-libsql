@@ -1,0 +1,43 @@
+{
+  "name": "express-session-libsql",
+  "version": "0.0.1",
+  "description": "LibSQL session store for express-session",
+  "repository": "github:lbennett-stacki/express-session-libsql",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "migrations"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "rm -rf dist && npm run build"
+  },
+  "keywords": [
+    "express",
+    "express-session",
+    "libsql",
+    "sqlite",
+    "turso",
+    "store"
+  ],
+  "author": "Luke Bennett <lbennett@fastmail.com>",
+  "dependencies": {
+    "@libsql/client": "^0.7.0",
+    "@libsql/core": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/express-session": "^1.18.0",
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
