@@ -1,6 +1,6 @@
 {
   "name": "express-session-libsql",
-  "version": "0.0.1",
+  "version": "0.14.0",
   "description": "LibSQL session store for express-session",
   "repository": "github:lbennett-stacki/express-session-libsql",
   "license": "MIT",
@@ -25,8 +25,8 @@
   ],
   "author": "Luke Bennett <lbennett@fastmail.com>",
   "dependencies": {
-    "@libsql/client": "^0.7.0",
-    "@libsql/core": "^0.7.0"
+    "@libsql/client": "^0.14.0",
+    "@libsql/core": "^0.14.0"
   },
   "devDependencies": {
     "@types/express-session": "^1.18.0",
